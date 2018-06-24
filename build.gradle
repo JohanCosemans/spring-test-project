@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'be.gcompany'
+version = '0.0.1-SNAPSHOT'
+
+description = """back-end"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.5.10.RELEASE'
+    compile group: 'io.springfox', name: 'springfox-swagger2', version:'2.7.0'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version:'2.7.0'
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'1.5.10.RELEASE') {
+exclude(module: 'commons-logging')
+    }
+}

@@ -1,11 +1,9 @@
 ### Backend
 
-Spring-boot based backend, Google Authentication and Swagger api documentation enabled
+Spring-boot based backend with Swagger api documentation enabled
 
 ## Maven
 ### Running locally
-
-`cd backend`
 
 `mvn spring-boot:run`
 
