@@ -1,4 +1,4 @@
-package be.gcompany.project;
+package com.lab900.project;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

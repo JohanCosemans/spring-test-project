@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package be.gcompany.project;
+package com.lab900.project;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
